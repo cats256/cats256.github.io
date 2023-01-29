@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -7,8 +6,14 @@
     <link rel = "stylesheet" href = "style.css">
     <script type="text/javascript" src="login.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script>
+        function censorPassword() {
+            var password = document.getElementById("password");
+            password.type = "password";
+        }
+        window.onload = censorPassword;
+    </script>
   </head>
-
   <body>
     <!--Login page-->
     <div id = "login-page" class = "visible">
@@ -24,31 +29,30 @@
       </div>
       <button type="submit" onclick="login()">Login</button> <!--Fix submission later-->
     </div>
-    
-    <div id = "app-contents" class = "hidden">
-        <div id = "curr-page">
-            <!--Dashboard-->
-            <div id = "dashboard" class = "hidden">
-                Dashboard
-            </div>
-
-            <!--Form-->
-            <div id = "info-form" class = "hidden">
-                Form
-            </div>
-
-            <!--Profile-->
-            <div id = "profile" class = "hidden">
-                Profile
-            </div>
+<div id = "app-contents" class = "hidden">
+    <div id = "curr-page">
+        <!--Dashboard-->
+        <div id = "dashboard" class = "hidden">
+            Dashboard
         </div>
 
-        <!--Navagation bar-->
-        <div id = "nav-bar">
-            <button id = "home-btn" onclick="to_dashboard()">Home</button>
-            <button id = "form-btn" onclick="to_form()">Form</button>
-            <button id = "profile-btn" onclick="to_profile()">Profile</button>
+        <!--Form-->
+        <div id = "info-form" class = "hidden">
+            Form
+        </div>
+
+        <!--Profile-->
+        <div id = "profile" class = "hidden">
+            Profile
         </div>
     </div>
+
+    <!--Navagation bar-->
+    <div id = "nav-bar">
+        <button id = "home-btn" onclick="to_dashboard()">Home</button>
+        <button id = "form-btn" onclick="to_form()">Form</button>
+        <button id = "profile-btn" onclick="to_profile()">Profile</button>
+    </div>
+</div>
   </body>
 </html>
