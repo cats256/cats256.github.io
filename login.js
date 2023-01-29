@@ -8,7 +8,7 @@ async function login() {
     document.getElementById("login-page").className = "hidden";
     document.getElementById("app-contents").className = "visible";
     document.getElementById("dashboard").className = "visible";
-    document.body.style.backgroundColor = "#EEECDD";
+    document.body.style.backgroundColor = ""#f2f2f2";
   } 
   else {
     document.getElementById("error-message").className = "visible";
