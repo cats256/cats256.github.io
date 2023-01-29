@@ -2,6 +2,11 @@
 
 /*Visibility*/
 
+* {
+    box-shadow: none;
+}
+
+
 .visible {
     display: visible;
 }
@@ -67,6 +72,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     border-radius: 4px;
+    box-shadow: none; /* Remove box shadow */
 }
 
 /*App*/
