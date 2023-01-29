@@ -1,4 +1,4 @@
-const data = require('./data.json')
+const data = fetch('./data.json')
 const { Travellers } = data;
 
 function login() {
