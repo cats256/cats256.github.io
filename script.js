@@ -14,5 +14,5 @@ function to_form() {
 function to_profile() {
     document.getElementById("dashboard").className = "hidden";
     document.getElementById("info-form").className = "hidden";
-    document.getElementById("profile").className = "visible";  
+    document.getElementById("profile").className = "visible";
 }

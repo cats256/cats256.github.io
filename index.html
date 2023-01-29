@@ -1,23 +1,27 @@
 <!DOCTYPE html>
+
 <html>
+  <script>document.body.addEventListener('touchmove', function(e){ 
+    document.getElementsByTagName('body')[0]. style .height = "100vh";
+    document.getElementsByTagName('body')[0]. style. overflow = "hidden";
+  });
+  </script>
+
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "style-2.css">
     <script type="text/javascript" src="login.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <script>
-        function censorPassword() {
-            var password = document.getElementById("password");
-            password.type = "password";
-        }
-        window.onload = censorPassword;
-    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Tabs</title>
   </head>
+
   <body>
     <!--Login page-->
     <div id = "login-page" class = "visible">
-      <h1>Tabs</h1>
+      <h1>Tabs <i class="bi bi-zoom-in"></i></h1>
       <div id = "form-div">
         <span id = "error-message" style = "color:#FAFAF6">Incorrect username or password</span>
         <h4 for="username">Username:</h4>
@@ -29,30 +33,103 @@
       </div>
       <button type="submit" onclick="login()">Login</button> <!--Fix submission later-->
     </div>
-<div id = "app-contents" class = "hidden">
-    <div id = "curr-page">
-        <!--Dashboard-->
-        <div id = "dashboard" class = "hidden">
-            Dashboard
+    
+    <div id = "app-contents" class = "hidden">
+        <div id = "curr-page">
+            <!--Dashboard-->
+            <div id = "dashboard" class = "hidden">
+                Dashboard
+            </div>
+
+            <!--Form-->
+            <div id = "info-form" class = "hidden">
+              <h1 class="form-group" id = "form-id">Report Lost Item</h1> 
+
+              <form>
+              <div class="form-group">
+                  <label for="itemloss">Item Lost</label>
+                  <br>
+                  <input type="text" class="form-control" id="itemloss" name="itemloss">
+              </div>
+              
+              <div class="form-group">
+                  <label for="dVal">Item Description</label>
+                  <br>
+                  <textarea class="form-control" id="dVal" name="dVal" rows="4"></textarea>
+              </div>
+              
+              <div class="form-group">
+                  <label for="lastseen">Day Last Seen: </label> 
+                  <input type="date" class="form-control" id="lastseen" name="lastseen">
+              </div>
+              
+              <div class="form-group">
+                  <label for="timelastseen">Time Last Seen: </label> 
+                  <input type="time" class="form-control" id="timelastseen" name="timelastseen">
+              </div>
+
+              <div class="form-group">
+                <label for="airport">Airport: </label> 
+                <input type="text" class="form-control" id="airport" name="airport">
+              </div>
+              
+              <div class="form-group">
+                  <label for="loc">Location: </label> 
+                  <input type="text" class="form-control" id="loc" name="loc">
+              </div>
+              <br>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+
+            <!--Profile-->
+            <div id = "profile" class = "hidden">
+              <div class="top-section">
+                <img class="photo" src="./blank.png" alt="User Photo">
+                <p>John Smith</p>
+                <i class="flag flag-us"></i>    
+              </div>
+              <hr>
+              <h1>Lost Items</h1>
+              <div class="bottom-section">
+          
+                  <div class="info-box">
+                    <p>Item Name: Item 1</p> 
+                    <p>Location: New York</p>
+                    <p>Time: 10:00 AM</p>
+                  </div>
+          
+                  <div class="info-box">
+                    <p>Item Name: Item 2</p>
+                    <p>Location: London</p>
+                    <p>Time: 2:00 PM</p>
+                  </div>
+          
+                  <div class="info-box">
+                    <p>Item Name: Item 3</p>
+                    <p>Location: Paris</p>
+                    <p>Time: 6:00 PM</p>
+                  </div>
+          
+              </div>
+            </div>
         </div>
 
-        <!--Form-->
-        <div id = "info-form" class = "hidden">
-            Form
+        <!--Navagation bar-->
+        <div id = "nav-bar">
+            <button id = "home-btn" onclick="to_dashboard()"><i class="bi bi-house-door-fill"></i></button>
+            <button id = "form-btn" onclick="to_form()"><i class="bi bi-plus-square-fill"></i></button>
+            <button id = "profile-btn" onclick="to_profile()"><i class="bi bi-person-circle"></i>
+            </button>
         </div>
-
-        <!--Profile-->
-        <div id = "profile" class = "hidden">
-            Profile
-        </div>
+        <script>
+          function censorPassword() {
+            var password = document.getElementById("password");
+            password.type = "password";
+          }
+          window.onload = censorPassword;
+        </script>
     </div>
-
-    <!--Navagation bar-->
-    <div id = "nav-bar">
-        <button id = "home-btn" onclick="to_dashboard()">Home</button>
-        <button id = "form-btn" onclick="to_form()">Form</button>
-        <button id = "profile-btn" onclick="to_profile()">Profile</button>
-    </div>
-</div>
   </body>
 </html>

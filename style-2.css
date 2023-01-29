@@ -1,0 +1,38 @@
+/*Profile*/
+.top-section {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Add a margin-left to the flag image */
+  .top-section img:last-child {
+    margin-left: 20px;
+  }
+
+  .photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  .bottom-section {
+
+    margin-left: 5vw; /*set the width to 100% */
+    margin-right: 5vw;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: block; /* change the display property to block */
+  }
+
+  .info-box {
+    margin: 20px auto; /* add margin to the top and bottom */
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid black;
+  }
+  
+  .info-box:hover {
+    background-color: #e6e6e6; /* change background color to a darker color */
+  }
