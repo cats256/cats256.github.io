@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Maven+Pro&display=swap');
+
 /*Profile*/
 .top-section {
     display: flex;
@@ -9,6 +11,7 @@
   /* Add a margin-left to the flag image */
   .top-section img:last-child {
     margin-left: 20px;
+    font-family: Verdana;
   }
 
   .photo {
@@ -17,20 +20,46 @@
     height: 100px;
     margin-right: 20px;
   }
+
+  #trav-info {
+    font-family: Verdana;
+  }
+
+  #trav-info h4{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  #trav-info p{
+    font-size: 14px;
+    color: #596E7A;
+  }
+
+  #trav-info i {
+    color: #c24d4d;
+  }
+
+  #profile h1 {
+    font-family: 'Karla';
+    margin-left: 10px;
+    border-bottom: solid;
+  }
+
   .bottom-section {
 
-    margin-left: 5vw; /*set the width to 100% */
-    margin-right: 5vw;
+    margin-left: 10px; /*set the width to 100% */
+    margin-right: 10px;
     background-color: #f2f2f2;
-    padding: 20px;
-    display: block; /* change the display property to block */
+    font-family: Verdana;
   }
 
   .info-box {
-    margin: 20px auto; /* add margin to the top and bottom */
-    padding: 20px;
+    margin: 16px auto; /* add margin to the top and bottom */
+    padding: 12px;
     background-color: #fff;
-    border: 3px solid black;
+    border: 2px solid black;
+    border-radius: 1px;
+    font-size: 14px;
   }
   
   .info-box:hover {

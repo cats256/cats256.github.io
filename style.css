@@ -12,7 +12,7 @@
 
 /*Login page*/
 body {
-    background-color: #5B5F97;
+    background-color: #18323E;
 }
 
 #login-page {
@@ -60,8 +60,6 @@ body {
     margin-top: 40px;
     background-color: #e06565;
     color: rgb(255, 255, 255);
-    /*
-    border: 0;*/
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 18px;
@@ -131,7 +129,33 @@ form div {
 
 
 /*Navbar*/
+#app-contents {
+    position: relative;
+    /* background-color: #f2f2f2; */
+}
+
 #nav-bar {
+    bottom: 0.5vh;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;    
+    align-items: center;
+}
+
+#nav-bar button {
+    padding: 15px;
+    color:aliceblue;
+    background-color: #0F252F;
+    border-radius: 4px;
+    /* margin-right: 40px; */
+}
+
+/* #nav-bar {
     bottom: 1px;
     position: fixed;
     background-color: #0F252F;
@@ -140,12 +164,32 @@ form div {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     display: flex;
-    justify-content: center;
+    border-radius: 10px;
+    justify-content: center;    
     align-items: center;
 }
 
 #nav-bar button {
     padding: 10px;
     left: 30px;
+}*/
+
+#dash-title {
+    color: #030f14;
+    font-family: 'Karla';
+    font-size: 30px;
+    background-color: #f2f2f2ec;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 10px;
 }
 
+#dashboard p {
+    font-family: Verdana;
+    font-size: 14px;
+    color: #596E7A;
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 40px;
+}
