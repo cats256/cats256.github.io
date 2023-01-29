@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Maven+Pro&display=swap');
+
+/*Visibility*/
+
+.visible {
+    display: visible;
+}
+
+.hidden {
+    display: none; 
+}
+
+/*Login page*/
+body {
+    background-color: #5B5F97;
+}
+
+#login-page {
+    background-color: #FAFAF6;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 150px;
+    border-radius: 4px;
+}
+
+#login-page h1 {
+    font-family: 'Karla';
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 40px;
+    font-size: 48px;
+    color: #c97e91;
+}
+
+#form-div {
+    font-family: Verdana; 
+    margin-left: 30px;
+    background-color: #FAFAF6;
+}
+
+#form-div h4{
+    font-size: 19px;
+    padding-top: 5px;
+    color: #333233;
+}
+
+#form-div input{
+    height: 24px;
+    width: 220px;
+    border-color: #d4d4d6;
+    border: 40%;
+    border-radius: 2px;
+}
+
+#login-page button {
+    margin-left: 185px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color: #e06565;
+    color: rgb(255, 255, 255);
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-color: #f7a3a3;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/*App*/
+
+#app-contents {
+    background-color: aquamarine;
+}
+
+/*Navbar*/
+#nav-bar {
+    bottom: 0;
+    position: fixed;
+    background-color: white;
+}
+
+/**/

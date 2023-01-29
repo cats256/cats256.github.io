@@ -1,0 +1,78 @@
+{
+    "Travellers": {
+      "hma12": {
+        "password": "qwerty123",
+        "personal-info": {
+          "first-name": "Helen",
+          "last-name": "Ma",
+          "phone": "832-265-2629",
+          "email": "helen.ma121601@tamu.edu"
+        },
+        "lost-items": {
+          "Laptop": {
+            "description": "Silver HP Pavillion with Hello Kitty sticker",
+            "location": "Terminal 2",
+            "image": "",
+            "status": 1
+          },
+          "Airpods": {
+            "description": "White airpods with pink case",
+            "location": "Customs",
+            "image": "img",
+            "status": 0
+          }
+        }
+      },
+      "nh23": {
+        "password": "asdqwe123",
+        "personal-info": {
+          "first-name": "Nhat",
+          "last-name": "Bui",
+          "phone": "281-185-1102",
+          "email": "nhatb@tamu.edu"
+        },
+        "lost-items": {
+          "Laptop": {
+            "description": "Black HP Envy X360 with AMD Radeon sticker",
+            "location": "Terminal 7",
+            "image": "",
+            "status": 0
+          }
+        }
+      },
+      "yfv13": {
+        "password": "123Tbs",
+        "personal-info": {
+          "first-name": "Yansel",
+          "last-name": "Flores",
+          "phone": "213-456-7760",
+          "email": "floresvargasy8861@uhcl.edu"
+        },
+        "lost-items": {
+          "Laptop": {
+            "description": " Silver Dell with red cover",
+            "location": "Terminal 1",
+            "image": "",
+            "status": 0
+          }
+        }
+      },
+      "alanprz": {
+        "password": "1234",
+        "personal-info": {
+          "first-name": "Alan",
+          "last-name": "Perez",
+          "phone": "214-837-6779",
+          "email": "prz.alan02@gmail.com"
+        },
+        "lost-items": {
+          "Dog": {
+            "description": "Dog with brown hair and a white spot on head",
+            "location": "Terminal 5",
+            "image": "",
+            "status": 0
+          }
+        }
+      }
+    }
+  }
